@@ -20,6 +20,10 @@ import {
 import HelpPage from './components/HelpPage'; // Importa el nuevo componente
 import ImageModal from './components/ImageModal'; // Importa el nuevo componente
 
+import logo from './img/logo.png';
+import s1 from './img/s1.png';
+import s3 from './img/s3.png';
+
 // Matrix Animation Component
 const MatrixRain = ({ isDark }: { isDark: boolean }) => {
   const [drops, setDrops] = useState<Array<{ id: number; x: number; y: number; speed: number; chars: string }>>([]);
@@ -126,7 +130,7 @@ function App() {
           <div className="flex items-center justify-between py-4">
             <div className="flex items-center space-x-2">
               <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-r from-white to-black">
-                <img src="./src/img/logo.png" alt="Logo"/>
+                <img src={logo} alt="Logo"/>
               </div>
               <span className={`text-xl font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>AISKOA</span>
             </div>
@@ -413,20 +417,20 @@ function App() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-16">
             <div className="md:w-1/2 flex justify-end">
               <img 
-                src="./src/img/s3.png" 
+                src={s3} 
                 alt="Screenshot 3" 
                 className="rounded-lg shadow-lg max-w-full h-auto cursor-pointer"
                 style={{ maxWidth: '400px' }}
-                onClick={() => handleImageClick('./src/img/s3.png')}
+                onClick={() => handleImageClick(s3)}
               />
             </div>
             <div className="md:w-1/2 flex justify-start">
               <img 
-                src="./src/img/s1.png" 
+                src={s1} 
                 alt="Screenshot 1" 
                 className="rounded-lg shadow-lg max-w-full h-auto cursor-pointer"
                 style={{ maxWidth: '400px' }}
-                onClick={() => handleImageClick('./src/img/s1.png')}
+                onClick={() => handleImageClick(s1)}
               />
             </div>
           </div>

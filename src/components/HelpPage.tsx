@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import ImageModal from './ImageModal';
 
+import s1 from '../img/s1.png';
+import s2 from '../img/s2.png';
+import s3 from '../img/s3.png';
+
 interface HelpPageProps {
   onBack: () => void;
   isDark: boolean;
@@ -44,10 +48,10 @@ const HelpPage: React.FC<HelpPageProps> = ({ onBack, isDark }) => {
           <div className="flex flex-col md:flex-row items-center md:space-x-8">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <img 
-                src="./src/img/s1.png" 
+                src={s1} 
                 alt="Paso 1: Interfaz principal" 
                 className="rounded-lg shadow-lg w-full cursor-pointer"
-                onClick={() => handleImageClick('./src/img/s1.png')}
+                onClick={() => handleImageClick(s1)}
               />
             </div>
             <div className="md:w-1/2">
@@ -64,10 +68,10 @@ const HelpPage: React.FC<HelpPageProps> = ({ onBack, isDark }) => {
           <div className="flex flex-col md:flex-row-reverse items-center md:space-x-reverse md:space-x-8">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <img 
-                src="./src/img/s2.png" 
+                src={s2} 
                 alt="Paso 2: Configuración de encriptación" 
                 className="rounded-lg shadow-lg w-full cursor-pointer"
-                onClick={() => handleImageClick('./src/img/s2.png')}
+                onClick={() => handleImageClick(s2)}
               />
             </div>
             <div className="md:w-1/2">
@@ -84,10 +88,10 @@ const HelpPage: React.FC<HelpPageProps> = ({ onBack, isDark }) => {
           <div className="flex flex-col md:flex-row items-center md:space-x-8">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <img 
-                src="./src/img/s3.png" 
+                src={s3} 
                 alt="Paso 3: Archivos encriptados" 
                 className="rounded-lg shadow-lg w-full cursor-pointer"
-                onClick={() => handleImageClick('./src/img/s3.png')}
+                onClick={() => handleImageClick(s3)}
               />
             </div>
             <div className="md:w-1/2">
