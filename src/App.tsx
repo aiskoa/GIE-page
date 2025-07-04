@@ -414,21 +414,21 @@ function App() {
       }`}>
         <div className="px-4 mx-auto max-w-7xl sm:px-6">
           {/* New image section */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-16">
-            <div className="md:w-1/2 flex justify-end">
+          <div className="flex flex-col items-center justify-center gap-8 mb-16 md:flex-row">
+            <div className="flex justify-end md:w-1/2">
               <img 
                 src={s3} 
                 alt="Screenshot 3" 
-                className="rounded-lg shadow-lg max-w-full h-auto cursor-pointer"
+                className="h-auto max-w-full rounded-lg shadow-lg cursor-pointer"
                 style={{ maxWidth: '400px' }}
                 onClick={() => handleImageClick(s3)}
               />
             </div>
-            <div className="md:w-1/2 flex justify-start">
+            <div className="flex justify-start md:w-1/2">
               <img 
                 src={s1} 
                 alt="Screenshot 1" 
-                className="rounded-lg shadow-lg max-w-full h-auto cursor-pointer"
+                className="h-auto max-w-full rounded-lg shadow-lg cursor-pointer"
                 style={{ maxWidth: '400px' }}
                 onClick={() => handleImageClick(s1)}
               />
@@ -539,9 +539,9 @@ function App() {
               <p className={`mb-6 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
                 Requires Windows 10 or later
               </p>
-              <button className="w-full py-3 text-white transition-colors bg-blue-600 rounded-full hover:bg-blue-700">
+              <a href="https://github.com/aiskoa/GIE/releases/download/versions/GIE_SETUP.exe" target="_blank" rel="noopener noreferrer" className="w-full py-3 text-white transition-colors bg-blue-600 rounded-full hover:bg-blue-700">
                 Download for Windows
-              </button>
+              </a>
               <span className="inline-block px-2 py-1 mt-2 text-xs text-blue-600 bg-blue-100 rounded-full">
                 Most Popular
               </span>
