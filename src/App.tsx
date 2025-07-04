@@ -539,7 +539,7 @@ function App() {
               <p className={`mb-6 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
                 Requires Windows 10 or later
               </p>
-              <a href="https://github.com/aiskoa/GIE/releases/download/versions/GIE_SETUP.exe" target="_blank" rel="noopener noreferrer" className="w-full py-3 text-white transition-colors bg-blue-600 rounded-full hover:bg-blue-700">
+              <a href="https://github.com/aiskoa/GIE/releases/download/version1.2.5/GIE_SETUP.exe" target="_blank" rel="noopener noreferrer" className="w-full py-3 text-white transition-colors bg-blue-600 rounded-full hover:bg-blue-700">
                 Download for Windows
               </a>
               <span className="inline-block px-2 py-1 mt-2 text-xs text-blue-600 bg-blue-100 rounded-full">
