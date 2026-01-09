@@ -388,7 +388,7 @@ export function Hero() {
                   </p>
                   <div className="flex flex-wrap gap-3">
                     <a
-                      href="#windows"
+                      href="https://github.com/aiskoa/GIE/releases/download/version1.2.5/GIE_SETUP.exe"
                       className="inline-flex items-center gap-2 rounded-lg border border-zinc-600/50 bg-zinc-800/60 px-4 py-2.5 text-sm font-medium text-zinc-100 backdrop-blur hover:bg-zinc-700/70 hover:border-zinc-500/60 transition-all"
                     >
                       <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -397,7 +397,7 @@ export function Hero() {
                       Windows
                     </a>
                     <a
-                      href="#linux"
+                      href="https://github.com/aiskoa/GIE/releases/download/version1.2.5/Linux.Ubuntu.zip"
                       className="inline-flex items-center gap-2 rounded-lg border border-zinc-600/50 bg-zinc-800/60 px-4 py-2.5 text-sm font-medium text-zinc-100 backdrop-blur hover:bg-zinc-700/70 hover:border-zinc-500/60 transition-all"
                     >
                       <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
