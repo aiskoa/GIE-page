@@ -9,7 +9,7 @@ export function Footer() {
         </div>
 
         <nav className="flex gap-4">
-          <a href="https://aiskoa.vercel.app/" className="text-sm hover:text-zinc-100">AISKOA Home</a>
+          <a href="https://aiskoa.vercel.app/" className="text-sm hover:text-zinc-100">AISKOA</a>
           <a href="#gallery" className="text-sm hover:text-zinc-100">Gallery</a>
           <a href="#" className="text-sm hover:text-zinc-100">Privacidad</a>
           <a href="#" className="text-sm hover:text-zinc-100">Contacto</a>

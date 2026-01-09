@@ -69,14 +69,14 @@ export function Hero() {
     let animationId: number
 
     const animate = () => {
-      ctx.fillStyle = "rgba(9, 9, 11, 0.08)"
+      ctx.fillStyle = "rgba(0, 0, 0, 0.02)"
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
       ctx.font = `${fontSize}px monospace`
 
       drops.forEach((drop) => {
         // Change character occasionally
-        if (Math.random() < 0.02) {
+        if (Math.random() < 0.01) {
           drop.char = characters[Math.floor(Math.random() * characters.length)]
         }
 
@@ -266,7 +266,7 @@ export function Hero() {
 
       <div className="relative isolate w-full min-h-[calc(100svh-3vh)] sm:min-h-[calc(100svh-3vh)]">
         <header className="absolute top-4 left-4 right-4 sm:top-6 sm:left-6 sm:right-6 flex justify-between items-start z-50">
-          <img src="../public/logo.png" alt="GIE" className="w-auto h-auto max-w-full" />
+          <img src="/logo.png" alt="GIE" className="w-16 h-16 max-w-full" />
 
           <nav ref={tagsRef} className="flex gap-2 sm:gap-3">
               <button
@@ -315,7 +315,18 @@ export function Hero() {
             WebkitMask: "url(#heroMask)",
           }}
         >
-          <canvas ref={canvasRef} className="absolute inset-0 w-full h-full z-0" style={{ background: "#09090b" }} />
+          {/* Background image with dark overlay */}
+          <div 
+            className="absolute inset-0 z-0"
+            style={{
+              backgroundImage: "url('/bg.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          />
+          <div className="absolute inset-0 z-[1] bg-black/30" />
+
+          <canvas ref={canvasRef} className="absolute inset-0 w-full h-full z-[2]" style={{ background: "transparent" }} />
 
           <div className="pointer-events-none absolute inset-0 z-0 top-20">
             <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/30 via-transparent to-zinc-950/60" />

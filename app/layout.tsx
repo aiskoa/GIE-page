@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   description:
     "Protect your secrets with ancient cryptographic arts. Military-grade encryption wrapped in mystical power.",
   generator: "v0.app",
+  icons: {
+    icon: "/logo.png",
+  },
 }
 
 export default function RootLayout({
