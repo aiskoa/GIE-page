@@ -266,7 +266,7 @@ export function Hero() {
 
       <div className="relative isolate w-full min-h-[calc(100svh-3vh)] sm:min-h-[calc(100svh-3vh)]">
         <header className="absolute top-4 left-4 right-4 sm:top-6 sm:left-6 sm:right-6 flex justify-between items-start z-50">
-          <h2 className="text-zinc-100 text-xl sm:text-2xl font-serif tracking-[0.2em] font-medium">GIE</h2>
+          <img src="/public/logo.png" alt="GIE" className="w-auto h-auto max-w-full" />
 
           <nav ref={tagsRef} className="flex gap-2 sm:gap-3">
               <button
