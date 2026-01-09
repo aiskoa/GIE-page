@@ -40,7 +40,7 @@ export function Gallery() {
               </div> */}
 
               <img
-                src={`/public/image-${slot}.png`}
+                src={`../public/image-${slot}.png`}
                 alt={`Gallery image ${slot}`}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
