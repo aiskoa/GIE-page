@@ -4,7 +4,6 @@ import { useRef } from "react"
 export function Gallery() {
   const galleryRef = useRef<HTMLDivElement>(null)
 
-  // Array de 6 espacios para fotos - el usuario puede personalizar
   const photoSlots = Array.from({ length: 6 }, (_, i) => i + 1)
 
   return (
@@ -20,7 +19,6 @@ export function Gallery() {
           </p>
         </div>
 
-        {/* Gallery Grid */}
         <div
           ref={galleryRef}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
@@ -30,14 +28,6 @@ export function Gallery() {
               key={slot}
               className="group relative aspect-square overflow-hidden rounded-xl bg-zinc-900/50 border border-zinc-700/50 hover:border-zinc-600/80 transition-all duration-300 hover:shadow-lg"
             >
-              {/* Placeholder for image */}
-              {/* <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-zinc-800 to-zinc-900">
-                <div className="text-center">
-                  <div className="text-6xl text-zinc-700 mb-4">📸</div>
-                  <p className="text-zinc-500 font-mono text-sm">Foto {slot}</p>
-                  <p className="text-zinc-600 text-xs mt-2">Reemplaza con tu imagen</p>
-                </div>
-              </div> */}
 
               <img
                 src={`/image-${slot}.png`}
@@ -55,15 +45,6 @@ export function Gallery() {
           ))}
         </div>
 
-        {/* Instructions */}
-        {/* <div className="mt-20 p-8 bg-zinc-900/30 border border-zinc-700/50 rounded-xl text-center">
-          <h3 className="text-xl font-serif text-zinc-100 mb-3">¿Cómo agregar tus fotos?</h3>
-          <p className="text-zinc-400 font-mono text-sm">
-            Reemplaza las rutas de las imágenes en el componente Gallery.tsx con tus imágenes.
-            <br />
-            Coloca tus imágenes en la carpeta <code className="bg-zinc-800 px-2 py-1 rounded mx-1">public/gallery/</code>
-          </p>
-        </div> */}
       </div>
     </section>
   )

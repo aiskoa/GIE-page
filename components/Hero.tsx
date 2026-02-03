@@ -41,7 +41,6 @@ export function Hero() {
 
     const drops: Drop[] = []
 
-    // Vertical drops
     for (let i = 0; i < columns; i++) {
       drops.push({
         y: Math.random() * canvas.height,
@@ -75,12 +74,10 @@ export function Hero() {
       ctx.font = `${fontSize}px monospace`
 
       drops.forEach((drop) => {
-        // Change character occasionally
         if (Math.random() < 0.01) {
           drop.char = characters[Math.floor(Math.random() * characters.length)]
         }
 
-        // Light white/gray color
         ctx.fillStyle = `rgba(255, 255, 255, ${drop.opacity})`
 
         if (drop.direction === "vertical") {
@@ -315,7 +312,6 @@ export function Hero() {
             WebkitMask: "url(#heroMask)",
           }}
         >
-          {/* Background image with dark overlay */}
           <div 
             className="absolute inset-0 z-0"
             style={{
@@ -333,7 +329,6 @@ export function Hero() {
             <div className="absolute inset-0 [background:radial-gradient(90%_60%_at_10%_70%,rgba(0,0,0,.5)_0%,transparent_70%)]" />
           </div>
 
-          {/* Custom cursor */}
           <div
             ref={customCursorRef}
             className={`fixed w-[30px] h-[30px] rounded-full bg-zinc-300/20 border border-zinc-400/40 pointer-events-none z-50 transition-opacity duration-300 ${
